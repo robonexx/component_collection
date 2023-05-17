@@ -5,7 +5,7 @@ export const ProductContainer = styled.div`
     width: 53.125rem;
     height: 20rem;
     border-radius: 3.125rem;
-    background-color: orangered;
+    background-color: transparent;
 `
 
 export const ProductCardWrapper = styled.div`
@@ -52,7 +52,7 @@ width: fit-content;
 position: relative;
  font-size: 0.7rem;
  font-weight: 700;
- background: linear-gradient(to top left, #C13509, #FAA525);
+ background: linear-gradient(to top left, #C1350980, #FAA525);
  border-radius: 6px;
 `
 export const CardTitle = styled.div`

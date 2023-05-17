@@ -28,7 +28,7 @@ const ProductTeaser = () => {
         if (idx === currentIndex) {
           return (
             <div key={p.id}>
-              (<ProductCard {...p} />)
+              <ProductCard {...p} />
             </div>
           );
         }
