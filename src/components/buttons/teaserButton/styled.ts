@@ -6,7 +6,7 @@ type Props = {
 
 export const RuBtn = styled.button<Props>`
     position: relative;
-    width: 120px;
+    min-width: 120px;
     height: 42px;   
     border: none;
     border: 1px solid transparent;
@@ -30,12 +30,12 @@ export const RuBtn = styled.button<Props>`
       color: aqua;
     }
 
-/*     &>img {
-      margin-right: 0.5rem;
+    &>img {
+      margin-left: 1rem;
       width: 24px;
       height: 24px;
       pointer-events: none;
-    } */
+    }
 
     &>h4 {
       font-size: 0.75rem;
