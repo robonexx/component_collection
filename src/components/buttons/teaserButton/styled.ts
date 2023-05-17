@@ -1,5 +1,49 @@
 import styled from 'styled-components'
 
+type Props = {
+  bgcolor: string;
+};
+
+export const RuBtn = styled.button<Props>`
+    position: relative;
+    width: 120px;
+    height: 42px;   
+    border: none;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s linear;
+    background-color: ${props => props.bgcolor};
+
+    &:hover {
+      cursor: pointer;
+      background-color: #282828;
+      border: 1px solid aqua;
+    }
+
+    &:active {
+      cursor: pointer;
+      background-color: #282828;
+      color: aqua;
+    }
+
+/*     &>img {
+      margin-right: 0.5rem;
+      width: 24px;
+      height: 24px;
+      pointer-events: none;
+    } */
+
+    &>h4 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      pointer-events: none;
+    }
+`;
+
 export const Btn = styled.button`
     position: relative;
     width: 120px;
@@ -26,9 +70,7 @@ export const Btn = styled.button`
     &:hover:before {
       cursor: pointer;
       background-image: radial-gradient(circle, #3DBDA7, #067D71);
-    }
-
-    
+    }    
 
     &>img {
       margin-right: 0.5rem;
@@ -42,5 +84,4 @@ export const Btn = styled.button`
       font-weight: 700;
       pointer-events: none;
     }
-
 `

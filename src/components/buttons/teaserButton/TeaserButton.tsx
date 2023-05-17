@@ -4,6 +4,7 @@ import ShopIcon from '../../../assets/icons/akar-icons_cart.svg';
 // button bg 3DBDA7
 // hover radial 3DBDA7 067D71
 // color white
+// not a typescript component yet
 
 const TeaserButton = () => {
   return (
