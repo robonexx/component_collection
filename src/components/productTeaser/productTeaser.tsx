@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-import { ProductContainer, show, hide } from "./styled"
+import { ProductContainer} from "./styled"
 import ProductCard from "./ProductCard"
 import {products} from '../../data/data.ts'
 
@@ -8,19 +8,22 @@ const ProductTeaser = () => {
   const [data, setData] = useState(products)
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const showNextProduct = () => {
-    if (currentIndex < data.length - 1) {
-      setCurrentIndex((prevIndex) => prevIndex + 1);
-    } else {
-      setCurrentIndex(0)
-    }
-  };
+  
 
   useEffect(() => {
+
+    const showNextProduct = () => {
+      if (currentIndex < data.length - 1) {
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+      } else {
+        setCurrentIndex(0)
+      }
+    };
+
     setTimeout(() => {
       showNextProduct()
     }, 5000)
-  }, [currentIndex])
+  })
 
   return (
     <ProductContainer>
@@ -33,8 +36,6 @@ const ProductTeaser = () => {
                 (<ProductCard {...p} />)
           </div>
             )
-          } else {
-            return undefined
           }
         }
         )

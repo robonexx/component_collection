@@ -83,13 +83,3 @@ export const AddToCart = styled.div`
   font-weight: 400;
 }
 `
-
-export const show = css`
-opacity: 1;
-transition: all 0.4s ease-in-out;
-`
-
-export const hide = css`
-opacity: 0,
-transition: all 0.4s ease-in-out;
-`
